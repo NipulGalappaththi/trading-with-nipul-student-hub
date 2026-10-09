@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10151e">
+<title>Trading With Nipul Galappaththi | Student Hub</title>
+<style>
+:root{--bg:#10151e;--panel:#202a38;--panel2:#18212d;--gold:#e5b65c;--muted:#c5ceda;--line:#354052;--white:#fff}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#1b2635 0,#10151e 55%);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+a{color:inherit} .wrap{width:min(1100px,92%);margin:auto}
+header{padding:26px 0 16px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:14px}.logo{height:54px;width:54px;border-radius:15px;background:var(--gold);display:grid;place-items:center;color:#10151e;font-size:26px;font-weight:900}
+.brand h1{font-size:clamp(17px,3vw,25px);line-height:1.2;margin:0;letter-spacing:.04em}.brand .name{color:var(--gold)}.eyebrow{font-size:11px;letter-spacing:.19em;color:var(--muted);margin-top:6px}
+.hero{padding:40px 0 25px}.hero-card{background:linear-gradient(135deg,#202a38,#17202b);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,5vw,42px);overflow:hidden;position:relative}.hero-card:after{content:"";position:absolute;width:240px;height:240px;border:1px solid #e5b65c22;border-radius:50%;right:-90px;top:-100px;box-shadow:0 0 0 25px #e5b65c08,0 0 0 50px #e5b65c05}
+.kicker{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.hero h2{font-size:clamp(27px,5vw,43px);line-height:1.12;margin:10px 0 12px;max-width:650px}.hero p{color:var(--muted);max-width:620px;margin:0}
+section{padding:20px 0 28px}.section-head{margin-bottom:16px}.section-head h2{margin:0;font-size:23px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:21px;min-width:0}.card h3{margin:9px 0 4px;font-size:18px}.card p{color:var(--muted);font-size:14px;margin:0 0 14px}.ico{font-size:25px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#10151e;text-decoration:none;border:0;border-radius:11px;padding:11px 15px;font-weight:800;font-size:14px;cursor:pointer}.btn.secondary{background:transparent;color:var(--gold);border:1px solid #d9a44177}.btnrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}
+.note{font-size:12px;color:#9eacbe;margin-top:10px}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.gallery img{width:100%;height:190px;object-fit:cover;border-radius:12px;border:1px solid var(--line);background:#151c26}.empty{border:1px dashed #536176;border-radius:14px;padding:22px;color:var(--muted);text-align:center;grid-column:1/-1}
+footer{margin-top:24px;border-top:1px solid var(--line);padding:22px 0 35px;color:var(--muted);font-size:13px}.footerrow{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery img{height:145px}.hero{padding-top:24px}.card{padding:18px}}
+</style>
+</head>
+<body>
+<header><div class="wrap brand">
+  <div class="logo" aria-hidden="true">↗</div>
+  <div><h1>TRADING WITH <span class="name">NIPUL GALAPPATHTHI</span></h1><div class="eyebrow">STUDENT RESOURCE HUB</div></div>
+</div></header>
+<main class="wrap">
+  <div class="hero"><div class="hero-card"><div class="kicker">Learn · Practice · Improve</div><h2>Welcome, Traders 👋</h2><p>Your class schedules, student feedback, registration and contact details — all in one place.</p></div></div>
+
+  <section id="timetables">
+    <div class="section-head"><h2>📅 Online & Physical Batch Timetables</h2><p>Check the latest class schedule for your batch.</p></div>
+    <div class="grid">
+      <article class="card"><div class="ico">💻</div><h3>Online Batch</h3><p>View the latest online class timetable.</p><div class="btnrow"><a class="btn" href="#" id="onlineSchedule" target="_blank" rel="noopener">View Timetable ↗</a></div></article>
+      <article class="card"><div class="ico">🏫</div><h3>Physical Batch</h3><p>View the latest in-person class timetable.</p><div class="btnrow"><a class="btn" href="#" id="physicalSchedule" target="_blank" rel="noopener">View Timetable ↗</a></div></article>
+    </div>
+    <p class="note">Timetable links can be updated each month in the website settings file.</p>
+  </section>
+
+  <section id="feedback">
+    <div class="section-head"><h2>🏆 Student Feedbacks & Results</h2><p>Student experiences and shared learning milestones.</p></div>
+    <div class="gallery" id="feedbackGallery"><div class="empty">Student feedback photos will appear here when added to the feedbacks folder and listed in the settings file.</div></div>
+  </section>
+
+  <section id="registration">
+    <div class="section-head"><h2>📝 Batch Registration</h2><p>Choose your preferred learning format.</p></div>
+    <div class="grid">
+      <article class="card"><div class="ico">🌐</div><h3>Online Batch</h3><p>Register for the online course.</p><a class="btn" href="https://equestinstitute.com/register/1494" target="_blank" rel="noopener">Register Online ↗</a></article>
+      <article class="card"><div class="ico">📍</div><h3>Physical Batch</h3><p>Register for the physical course.</p><a class="btn" href="https://equestinstitute.com/register/1494" target="_blank" rel="noopener">Register for Physical ↗</a></article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-head"><h2>☎️ Direct Contact Us</h2><p>Contact us for course details and batch enquiries.</p></div>
+    <div class="card"><h3>Trading With Nipul Galappatht hi</h3><p>Phone: 0777876578</p><div class="btnrow"><a class="btn" href="tel:+94777876578">Call Now</a><a class="btn secondary" id="groupLink" href="#" target="_blank" rel="noopener">Student Group ↗</a></div><p class="note">The student group button will work once a group invite link is added to the settings file.</p></div>
+  </section>
+</main>
+<footer><div class="wrap footerrow"><span>© <span id="year"></span> Trading With Nipul Galappatht hi</span><span>Student Resource Hub</span></div></footer>
+<script src="settings.js"></script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const cfg = window.STUDENT_HUB_SETTINGS || {};
+function setLink(id, value) {
+  const el = document.getElementById(id);
+  if (value && value !== 'ADD_LINK_HERE') { el.href = value; }
+  else { el.href = '#'; el.addEventListener('click', e => { e.preventDefault(); alert('This link has not been added yet. Update settings.js first.'); }); }
+}
+setLink('onlineSchedule', cfg.onlineTimetable);
+setLink('physicalSchedule', cfg.physicalTimetable);
+setLink('groupLink', cfg.studentGroupLink);
+const gallery = document.getElementById('feedbackGallery');
+const photos = Array.isArray(cfg.feedbackPhotos) ? cfg.feedbackPhotos : [];
+if (photos.length) {
+  gallery.innerHTML = '';
+  photos.forEach((photo, i) => {
+    const img = document.createElement('img');
+    img.src = photo;
+    img.alt = 'Student feedback ' + (i + 1);
+    img.loading = 'lazy';
+    gallery.appendChild(img);
+  });
+}
+</script>
+</body>
+</html>
